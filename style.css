@@ -1,0 +1,40 @@
+button {
+    margin: .5rem;
+    border-radius: 30%;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: .4rem;
+    font-family: inherit;
+    font-size: 130%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #444;
+}
+
+.box {
+    background-color: rgba(71, 185, 200, 0.54);
+    padding: 3rem;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px;
+    color: antiquewhite;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
