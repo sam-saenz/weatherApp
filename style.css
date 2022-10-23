@@ -38,7 +38,7 @@ body {
 .box {
     background-color: rgba(71, 185, 200, 0.54);
     padding: 3rem;
-    border-radius: 30px;
+    border-radius: 10px;
     width: 100%;
     max-width: 700px;
     margin: 30px;
@@ -53,4 +53,20 @@ body {
 
 h1.temperature {
     margin: 0;
+}
+
+.desc {
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
+.humidity {
+    padding-bottom: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
 }
