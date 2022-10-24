@@ -70,3 +70,17 @@ h1.temperature {
     align-items: center;
     padding-bottom: 5px;
 }
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading Weather";
+    color: white;
+    position: absolute;
+    top: 0;
+}
