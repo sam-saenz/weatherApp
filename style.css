@@ -84,3 +84,17 @@ h1.temperature {
     position: absolute;
     top: 0;
 }
+
+.weather.error {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.error::after {
+    visibility: visible;
+    content: "Cannot Find City";
+    color: white;
+    position: absolute;
+    top: 0;
+}

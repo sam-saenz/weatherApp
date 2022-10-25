@@ -2,7 +2,18 @@ let weather = {
     "apiKey": "31f653ca78d8f591aab943d3cf2d731f",
     fetchWeather: function(city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + this.apiKey)
-            .then((response) => response.json())
+            .then((response) => {
+                if(response.ok) {
+                    return response.json()
+                }
+                else if(response.status === 404) {
+                    document.querySelector(".weather").classList.add("error")
+                    return Promise.reject('error 404')
+                }
+                else {
+                    return Promise.reject('some other error: ' + response.status)
+                }
+            })
             .then((data) => this.weatherDisplay(data));
     },
     weatherDisplay: function(data) {
